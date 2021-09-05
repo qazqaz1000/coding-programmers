@@ -2,7 +2,13 @@
 class Run{
     public static void main(String[] args) {
         Run run = new Run();
-        run.scoville();
+        run.diskController();
+    }
+
+    private void diskController(){
+        DiskController dc = new DiskController();
+        int[][] jobs = {{0, 3}, {1, 9}, {2, 6}, {3, 3}, {1, 2}, {6, 20}};
+        dc.solution(jobs);
     }
 
     private void scoville(){
