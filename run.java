@@ -2,7 +2,19 @@
 class Run{
     public static void main(String[] args) {
         Run run = new Run();
-        run.diskController();
+        run.operations();
+    }
+
+    private void operations(){
+        Operations oper = new Operations();
+   
+    
+        String[] operations = {"I 16","D 1"};
+        oper.solution(operations);
+        String[] operations2 = {"I 7","I 5","I -5","D -1"};
+        oper.solution(operations2);
+        String[] operations3 = {"I 16", "I -5643", "D -1", "D 1", "D 1", "I 123", "D -1"};
+        oper.solution(operations3);
     }
 
     private void diskController(){

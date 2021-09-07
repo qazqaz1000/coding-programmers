@@ -25,15 +25,17 @@ class DiskController {
             }
             if(pq.isEmpty()){
                 accumulation = jobs[jobIndex][0];
-            }
-            Job curJob = pq.poll();
-            if(accumulation == 0) {
-                avarage += curJob.mTime;
             }else{
-                avarage +=  accumulation + curJob.mTime - curJob.mStart;
+                Job curJob = pq.poll();
+                if(accumulation == 0) {
+                    avarage += curJob.mTime;
+                }else{
+                    avarage +=  accumulation + curJob.mTime - curJob.mStart;
+                }
+                accumulation += curJob.mTime;
+                count++;
             }
-            accumulation += curJob.mTime;
-            count++;
+
         }
         answer = avarage / jobs.length;
         System.out.println(answer);
