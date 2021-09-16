@@ -2,7 +2,25 @@
 class Run{
     public static void main(String[] args) {
         Run run = new Run();
-        run.kth();
+        run.HIndex();
+    }
+
+    private void HIndex(){
+        H_Index hindex = new H_Index();
+        int[] citations = {3, 0, 6, 1, 5};
+        hindex.solution(citations);
+    }
+
+    private void MaxNum(){
+        MaxNum max = new MaxNum();
+        int[] numbers = {6, 10, 2};
+        int[] numbers2 = {3, 30, 34, 5, 9};
+        int[] numbers3 = {123, 234, 7, 89, 901, 109};
+        int[] numbers4 = {123, 0, 1000, 0, 999, 1000};
+        // max.solution(numbers);
+        // max.solution(numbers2);
+        // max.solution(numbers3);
+        max.solution(numbers4);
     }
 
     private void kth(){
