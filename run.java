@@ -2,7 +2,25 @@
 class Run{
     public static void main(String[] args) {
         Run run = new Run();
-        run.HIndex();
+        run.primeNumber();
+    }
+
+    private void primeNumber(){
+        PrimeNumnber prime = new PrimeNumnber();
+        String numbers = "17";
+        String numbers2 = "011";
+        prime.solution(numbers);
+        prime.solution(numbers2);
+    }
+
+    private void Exam(){
+        Exam exam = new Exam();
+        int[] answers = {1,2,3,4,5};
+        int[] answers2 = {1,3,2,4,2};
+        int[] answers3 = {4, 4, 4, 5,1, 2, 4, 5, 1, 2 , 3, 4, 5, 1, 2, 4, 5, 4, 2, 5};
+        // exam.solution(answers);
+        // exam.solution(answers2);
+        exam.solution(answers3);
     }
 
     private void HIndex(){
