@@ -1,8 +1,16 @@
 
+
 class Run{
     public static void main(String[] args) {
         Run run = new Run();
-        run.primeNumber();
+        run.carpet();
+    }
+
+    private void carpet(){
+        Carpet carpet = new Carpet();
+        carpet.solution(10, 2);
+        carpet.solution(8, 1);
+        carpet.solution(24, 24);
     }
 
     private void primeNumber(){
