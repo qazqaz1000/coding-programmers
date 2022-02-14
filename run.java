@@ -8,7 +8,7 @@ class Run{
     private void primeNumber(){
         PrimeNumnber prime = new PrimeNumnber();
         String numbers = "17";
-        String numbers2 = "011";
+        String numbers2 = "110";
         prime.solution(numbers);
         prime.solution(numbers2);
     }
