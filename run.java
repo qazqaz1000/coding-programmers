@@ -3,7 +3,14 @@
 class Run{
     public static void main(String[] args) {
         Run run = new Run();
-        run.carpet();
+        run.gymSuit();
+    }
+
+    private void gymSuit(){
+        GymSuit gymSuit = new GymSuit();
+        gymSuit.solution(5, new int[]{2, 4}, new int[]{1, 3, 5});
+        gymSuit.solution(5, new int[]{2, 4}, new int[]{3});
+        gymSuit.solution(3, new int[]{3}, new int[]{1});
     }
 
     private void carpet(){
